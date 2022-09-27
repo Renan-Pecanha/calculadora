@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylecalc.css">
 </head>
+
+
 <body>
-    
-    <h1>calculadora</h1>
+
+    <div class="fundo">
+    <div class="pcalc">
+    <h1>CALCULADORA</h1>
     <input id="num1" type="number"/>
     <input id="num2" type="number"/>
 
@@ -16,12 +21,17 @@
     <button onclick="calc('-')">-</button>
     <button onclick="calc('*')">*</button>
     <button onclick="calc('/')">/</button>
-
     <input id="calc" type="number" readonly>
-    <div id="history"> </div>
+    
+</div>
+    <div class="phistory">
 
-    <div>
+    <h1>HISTORICO</h1>
+
+        <div id="history"> </div>
+       
         <script>
+            
             function calc (op){
 
                 if(op=='+'){
@@ -68,5 +78,6 @@
             }
         </script>
     </div>
+</div>
 </body>
 </html>
